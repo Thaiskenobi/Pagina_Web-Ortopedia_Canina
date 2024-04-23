@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cuello</title>
+   <!--El link para poder unir el css con el-->
+   <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+   <header>
+      <header>
+         <!--Este div contiene la caja la cual nos permite volver a la pagina principal-->
+         <div class="caja-volver">
+            <a href="home.html">Home</a>
+         </div>
+         <!--Este div contiene la caja la cual nos permite bajar a los beneficios-->
+         <div class="caja-bajar">
+            <a href="#bajar">Bajar</a>
+         </div>
+
+         <!--Este es el esqueleto de la pagina-->
+         <div id="cuerpo-cen">
+            <!--Caja que contiene el logo de la empresa-->
+            <div class="caja-redonda"> <img src="Imagenes/ONE.png" alt="logo empresa" /></div>
+            <div id="titulo">
+               <h1>Ayuda en la Calle</h1>
+
+               <!--El menu de navegación tanto horizontal como vertical con enlaces a las paginas-->
+               <nav>
+                  <ul class="menu-horizontal">
+
+                     <li>
+                        <a href="esquema.html">Ayuda Ortopedica</a>
+                        <ul class="menu-vertical">
+                           <li><a href="Espalda.html" target="_blank">Espalda</a></li>
+                           <li><a href="Cadera.html" target="_blank">Cadera</a></li>
+                           <li><a href="Patas.html" target="_blank">Patas</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">Complementos</a>
+                        <ul class="menu-vertical">
+                           <li><a href="Casa.html">Ayuda en casa</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="QuienesSomos.html">Quienes Somos</a>
+                     </li>
+                     <li><a href="Contacto.html">Contacto</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div id="cuerpo-izq"></div>
+         <div id="cuerpo-der"></div>
+      </header>
+
+      <section>
+         <article>
+            <!--Este div contiene la caja la cual contiene la descripcion de el producto-->
+            <div class="caja-descripcion">
+               <p>
+                  Descubre cómo nuestras ortopedias pueden marcar la diferencia en la vida diaria de tu perro mientras
+                  pasean por la calle. Desde botas ortopédicas que ofrecen tracción en superficies resbaladizas hasta
+                  collares que brindan comodidad durante el paseo, nuestra gama está diseñada para mantener a tu amigo
+                  de cuatro patas activo y seguro.
+               </p>
+            </div>
+         </article>
+         <article>
+            <!--Este div contiene la caja donde vamos a presentar dos productos de la tienda-->
+            <div class="caja-productos">
+               <h3>Productos Destacados</h3>
+            </div>
+
+            <!--Los dos div sguientes son las dos cajas las cuales tienen una imagen de el producto ademas de un enlace-->
+            <div class="caja-producto1">
+               <p>Abrigo térmico impermeable</p>
+               <img src="Imagenes/abrigo-para-perro (1).jpg" alt="imagen de perro" height="200"><br><br>
+               <a
+                  href="https://www.ortocanis.com/es/protectores-articulares/abrigo-para-perro.html#/292-base_del_cuello_a_inicio_cola-20_21_cm">64,00
+                  €</a>
+            </div>
+
+            <div class="caja-producto2">
+               <p>Botas para perro pawz</p>
+               <img src="Imagenes/botas-para-perro-de-caucho.jpg" alt="imagen de perro" height="200"><br><br>
+               <a
+                  href="https://www.ortocanis.com/es/ayudas-tecnicas/botas-para-perro-de-caucho.html#/24-talla-xl/26-color-negro">16,13
+                  €</a>
+            </div>
+         </article>
+         <article>
+            <!--Este div contiene la caja la cual es el titulo de el apartado de beneficios-->
+            <div class="caja-beneficios" id="bajar">
+               <h3>Que beneficios tiene</h3>
+            </div>
+
+            <!--Este los dos div siguientes estan las dos cajas donde estan los beneficios-->
+            <div class="caja-beneficio1">
+               <h4><strong>Tracción en Superficies Resbaladizas:</strong></h4>
+               <p>Nuestras ortopedias para la calle proporcionan agarre adicional, especialmente útiles en pavimentos
+                  resbaladizos.</p>
+            </div>
+
+            <div class="caja-beneficio2">
+               <h4><strong>Confort Durante el Paseo: </strong></h4>
+               <p>Collares y accesorios diseñados para brindar comodidad durante las actividades al aire libre.</p>
+            </div>
+         </article>
+
+      </section>
+
+      <footer>
+         <!--El copyrigth de la empresa-->
+         <p>&copy; 2023 One Piece | Todos los derechos reservados</p>
+
+         <!--Los cuatro logos  de la pagina web con los enlaces a las paginas-->
+         <div class="caja-instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+               <img src="Imagenes/Instagram_2016_New+Logo-1054555920.png" alt="icono instagram" /></a>
+         </div>
+
+         <div class="caja-facebook">
+            <a href="https://es-es.facebook.com/login.php" target="_blank">
+               <img src="Imagenes/facebook-logo-png-9-1024x918-4008173847.png" alt="icono facebook" /></a>
+         </div>
+
+         <div class="caja-twitter">
+            <a href="https://twitter.com/i/flow/login " target="_blank">
+               <img src="Imagenes/twitter-x-logo-ACDB3F35D8-seeklogo.com-1305349395.png" alt="icono x" /></a>
+         </div>
+
+         <div class="caja-gmail">
+            <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="_blank">
+               <img src="Imagenes/Gmail-Logo-3047195973.png" alt="icono gmail" /></a>
+         </div>
+      </footer>
+</body>
+
+</html>

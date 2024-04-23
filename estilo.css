@@ -1,0 +1,547 @@
+/* En este css lo que hace es cambiar la etiqueta body de todos los archivos */
+body {
+	background-image: url(Imagenes/huellas.png);
+	/* En vez de un color yo he puesto una imagen*/
+	background-position: center;
+	background-size: cover;
+}
+
+/* En este css lo que he hecho es darle unas propiedades a la etiqueta <h1> */
+h1 {
+	text-align: center;
+	color: rgb(248, 240, 236);
+}
+
+/* En este css va el titulo generico para todas las paginas */
+#titulo {
+	top: 0px;
+	left: 0px;
+	width: 1105px;
+	height: 155px;
+	padding-top: 5px;
+	text-align: center;
+	background-color: #8F7762;
+	border: 2px solid rgb(14, 14, 14);
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Aqui empiezo a hacer el menu desplegable, con la etiqueta <nav> aqui decido la posicion, el color...  */
+nav {
+	max-width: 900px;
+	left: 500px;
+	margin: auto;
+	background-color: #151515;
+	font-size: 15px;
+	margin-top: 30px;
+	border-radius: 50px;
+}
+
+/* Aqui lo que hago es darle propiedades al menu dento de la etiqueta <nav> */
+.menu-horizontal {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	z-index: 1;
+	position: absolute;
+	top: 7%;
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 30px;
+}
+
+/* aqui le estoy dando las propiedades a la etiqueta <li> y <a> */
+.menu-horizontal>li>a {
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+/* En este css le esoty dando propiedades a <li>  la opcion hover hace que se interactivo */
+.menu-horizontal>li:hover {
+	background-color: rgba(255, 179, 0, 0.908);
+	border-radius: 60px;
+}
+
+/* En este css es lo mismo que en el menu horizontal pero en este caso es para el vertical */
+.menu-vertical {
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.593);
+	border-radius: 30px;
+}
+
+/* Aqui crea el desplege juntando el menu horizontal con el vertical */
+.menu-horizontal li:hover .menu-vertical {
+	display: block;
+}
+
+/* En este css le esoty dando propiedades a <li>  la opcion hover hace que se interactivo */
+.menu-vertical li:hover {
+	background-color: rgb(248, 153, 37);
+	color: black;
+	border-radius: 60px;
+}
+
+/* Para estilizar los enlaces dentro de los elementos de lista*/
+.menu-vertical li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+/* Esta caja es la caja donde va a estar el logo de la pagina*/
+.caja-redonda {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.456);
+}
+
+/* Con esta caja consigo poner la imagen dentro de la caja anterior*/
+.caja-redonda img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Esta caja es el contenedor donde voy a poner las redes sociales*/
+.caja-instagram {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	left: 450px;
+}
+
+/* Esta caja es la que me permite poner los logos de las redes sociales esta de instagram*/
+.caja-instagram img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Esta caja es el contenedor donde voy a poner las redes sociales*/
+.caja-facebook {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	left: 500px;
+}
+
+/* Esta caja es la que me permite poner los logos de las redes sociales esta de facebook*/
+.caja-facebook img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Esta caja es el contenedor donde voy a poner las redes sociales*/
+.caja-twitter {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 55px;
+	left: 550px;
+}
+
+/* Esta caja es la que me permite poner los logos de las redes sociales esta de twitter*/
+.caja-twitter img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Esta caja es el contenedor donde voy a poner las redes sociales*/
+.caja-gmail {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	left: 600px;
+}
+
+/* Esta caja es la que me permite poner los logos de las redes sociales esta de gmail*/
+.caja-gmail img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Esta es la caja la cual esta en medio de la pagina web de color blanco*/
+#cuerpo-cen {
+	position: absolute;
+	top: 1px;
+	left: 122px;
+	width: 1107px;
+	height: 1300px;
+	background-color: rgba(255, 255, 255, 0.928);
+	font-family: Helvetica, Arial;
+	color: black;
+	text-align: center;
+}
+
+/* Esta caja es el contenedor donde voy a poner la imagen del perro pero esto es solo para moverla por la pagina*/
+.caja-equema-perro {
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	width: 700px;
+	height: 700px;
+	overflow: hidden;
+}
+
+/* Y esta caja es la que me permite poner la imagen del perro dentro de la caja anterior*/
+.caja-esquema-perro img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Esta caja es la que tiene la imagen del perro por encima por la parte de el cuello*/
+.caja-equema-cuello {
+	position: absolute;
+	top: 320px;
+	left: 700px;
+	width: 100px;
+	text-align: center;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0);
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+
+/* Esta caja es la que tiene la imagen del perro por encima por la parte de la espalda*/
+.caja-equema-espalda {
+	position: absolute;
+	top: 350px;
+	left: 590px;
+	width: 100px;
+	text-align: center;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0);
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+
+/* Esta caja es la que tiene la imagen del perro por encima por la parte de la cadera*/
+.caja-equema-cadera {
+	position: absolute;
+	top: 380px;
+	left: 490px;
+	width: 100px;
+	text-align: center;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0);
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+
+/* Esta caja es la que tiene la imagen del perro por encima por la parte de las patas*/
+.caja-equema-patas {
+	position: absolute;
+	top: 600px;
+	left: 450px;
+	width: 100px;
+	text-align: center;
+	border: 2px solid rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0);
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+
+/* Esta caja lo que hace es hacer que la caja de el cuello cuando pasamos en cursor por encima el fondo cambia de color*/
+.caja-equema-cuello:hover {
+	background-color: #8F7762;
+}
+
+/* Esta caja lo que hace es hacer que la caja de la espalda cuando pasamos en cursor por encima el fondo cambia de color*/
+.caja-equema-espalda:hover {
+	background-color: #8F7762;
+}
+
+/* Esta caja lo que hace es hacer que la caja de la cadera cuando pasamos en cursor por encima el fondo cambia de color*/
+.caja-equema-cadera:hover {
+	background-color: #8F7762;
+}
+
+/* Esta caja lo que hace es hacer  que la caja de las patas cuando pasamos en cursor por encima el fondo cambia de color*/
+.caja-equema-patas:hover {
+	background-color: #8F7762;
+}
+
+/* Esta caja es donde va el enlace para volver a home*/
+.caja-volver {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 50px;
+	height: 20px;
+	padding-top: 5PX;
+	text-align: center;
+	background-color: #8F7762;
+	border: 2px solid rgb(14, 14, 14);
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Esta caja es donde va el enlace para ir mas abajo dento de la misma pagina*/
+.caja-bajar {
+	position: absolute;
+	top: 30px;
+	left: 1260px;
+	width: 50px;
+	height: 20px;
+	padding-top: 5PX;
+	text-align: center;
+	background-color: #8F7762;
+	border: 2px solid rgb(14, 14, 14);
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Esta caja hace que cambie de color la caja volver cada vez que pasamos el cursor por encima*/
+.caja-volver:hover {
+	border: 2px solid rgb(128, 94, 0);
+}
+
+/* Esta caja hace que cambie de color la caja bajar cada vez que pasamos el cursor por encima*/
+.caja-bajar:hover {
+	border: 2px solid rgb(128, 94, 0);
+}
+
+/* Esta caja es donde estan las descripciones de todas las paginas*/
+.caja-descripcion {
+	position: absolute;
+	top: 200px;
+	left: 230px;
+	width: 900px;
+	height: 100px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Esta caja es donde esta el titulo de los productos*/
+.caja-productos {
+	position: absolute;
+	top: 350px;
+	left: 500px;
+	width: 350px;
+	height: 50px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* En esta caja es donde esta toda la informacion de el produto1*/
+.caja-producto1 {
+	position: absolute;
+	top: 450px;
+	left: 200px;
+	width: 310px;
+	height: 310px;
+	background-color: rgba(255, 255, 255, 0.86);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+}
+
+/* Hace que cambie de color el producto1 cada vez que se pase el cursor por encima*/
+.caja-producto1:hover {
+	background-color: rgba(245, 198, 117, 0.36);
+}
+
+/* En esta caja es donde esta toda la informacion de el produto2*/
+.caja-producto2 {
+	position: absolute;
+	top: 450px;
+	left: 800px;
+	width: 310px;
+	height: 310px;
+	background-color: rgba(255, 255, 255, 0.86);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+}
+
+/* Hace que cambie de color el producto2 cada vez que se pase el cursor por encima*/
+.caja-producto2:hover {
+	background-color: rgba(245, 198, 117, 0.36);
+}
+
+/* Esta caja es donde esta el titulo de los beneficios*/
+.caja-beneficios {
+	position: absolute;
+	top: 800px;
+	left: 500px;
+	width: 350px;
+	height: 50px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* En esta caja es donde esta toda la informacion de el beneficio1*/
+.caja-beneficio1 {
+	position: absolute;
+	top: 900px;
+	left: 200px;
+	width: 310px;
+	height: 200px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+}
+
+/* En esta caja es donde esta toda la informacion de el beneficio2*/
+.caja-beneficio2 {
+	position: absolute;
+	top: 890px;
+	left: 800px;
+	width: 310px;
+	height: 200px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+}
+
+/* En esta caja es donde esta toda la informacion copiada el google maps*/
+.caja-maps {
+	position: absolute;
+	top: 400px;
+	left: 300px;
+	width: 700px;
+	height: 320px;
+	font-family: Helvetica, Arial;
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* En esta caja es la que esta posicionada arriba dentro de home y quien somos*/
+.caja-arr {
+	position: absolute;
+	top: 360px;
+	left: 230px;
+	width: 900px;
+	height: 150px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* En esta caja es la que esta posicionada en medio dentro de quien somos*/
+.caja-med {
+	position: absolute;
+	top: 900px;
+	left: 230px;
+	width: 900px;
+	height: 200px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* En esta caja es la que esta posicionada abajo dentro de home*/
+.caja-abajo {
+	position: absolute;
+	top: 850px;
+	left: 230px;
+	width: 900px;
+	height: 200px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* En esta caja es donde esta toda la informacion de la fundadora de la empresa */
+.caja-fundadora {
+	position: absolute;
+	top: 550px;
+	left: 230px;
+	width: 310px;
+	height: 310px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+}
+
+/* En esta caja es donde esta toda la informacion de el por que fundó la empresa*/
+.caja-fun-desc {
+	position: absolute;
+	top: 600px;
+	left: 600px;
+	width: 500px;
+	height: 145px;
+	padding-top: 10px;
+	background-color: rgba(245, 198, 117, 0.36);
+	font-family: Helvetica, Arial;
+	color: black;
+	border: 2px solid rgb(14, 14, 14);
+	text-align: center;
+}
+
+
+/* Aqui estan las caracteristicas que va a tener el footer*/
+footer {
+	height: 100px;
+	width: 700px;
+	background-color: #8F7762;
+	position: absolute;
+	padding-left: 410px;
+	top: 1200px;
+	left: 120px;
+}
